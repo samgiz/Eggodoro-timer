@@ -1,0 +1,97 @@
+/* Egg shape taken from 
+https://css-tricks.com/examples/ShapesOfCSS/
+*/
+*{
+	margin: auto;
+}
+#egg {
+   	display:block;
+   	width: 430px;
+   	height: 600px;
+   	background-color: #ccff99;
+   	-webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
+   	border-radius:         50%  50%  50%  50%  / 60%   60%   40%  40%;
+}
+
+body{
+	padding: 50px;
+	background-color : #3399ff;
+}
+
+
+#display{
+	width: 240px;
+	height: 50px;
+	margin: auto;
+	padding: 5px;
+	background-color: black;
+	color: yellow;
+	font: bold 50px sans-serif;
+	text-align: center;
+	margin-bottom: 10px;
+	font-family: 'CodeNewRomanRegular';
+}
+.subtract{
+	background-color: red;
+	font-size: 45px;
+	font-weight: 900;
+}
+.add{
+	background-color: blue;
+	
+}
+#pauseButton{
+	padding-right: 10px;
+	background-color: green;
+	font-size: 55px;
+	width: 80px;
+	height: 80px;
+}
+button{
+/* 	border-style: none; */
+	color: white;
+	font: bold 50px Lucida Console, sans-serif;
+	width: 60px;
+	height: 60px;
+	display:block;
+   	background-color: #ccff99;
+	text-align: center;
+   	border-radius: 50%;
+	margin: 5px;
+}
+button:active{
+	border-style: inset;
+}
+button:focus{
+	outline-style: none;
+}
+p{
+	text-align: center;
+	margin-top: 180px;
+	margin-bottom: 20px;
+	font: 35px Lucida Console, sans-serif;
+}
+.workOrBreak{
+	color: black;
+	font: bold 13px Lucida Console, sans-serif;
+	width: 135px;
+	height: 40px;
+	display:block;
+   	background-color: #CCCCCC;
+   	border-radius: 10px;
+	margin: 5px;
+	font-size: 18px;
+}
+#workButton{
+	border-style: inset;
+}
+#breakButton{
+	border-style: none;
+}
+i{
+	pointer-events:none;
+}
+#title{
+	text-align: right;
+	margin-right: 80px;
+}
