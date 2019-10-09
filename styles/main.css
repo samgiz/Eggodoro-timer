@@ -1,132 +1,130 @@
 /* Egg shape taken from 
 https://css-tricks.com/examples/ShapesOfCSS/
 */
-*{
-	margin: auto;
-}
 #egg {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-   	width: 430px;
-   	height: 600px;
-   	background-color: #ccff99;
-   	-webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
-   	border-radius:         50%  50%  50%  50%  / 60%   60%   40%  40%;
+  margin: 0 auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 430px;
+  height: 600px;
+  background-color: #ccff99;
+  -webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
+  border-radius:         50%  50%  50%  50%  / 60%   60%   40%  40%;
 }
 
 body{
-	padding: 50px;
-	background-color : #3399ff;
+  padding: 50px;
+  background-color : #3399ff;
 }
 
 
 #display{
-	width: 240px;
-	height: 50px;
-	margin: auto;
-	padding: 5px;
-	background-color: black;
-	color: yellow;
-	font: bold 50px sans-serif;
-	text-align: center;
-	margin-bottom: 10px;
-	font-family: 'CodeNewRomanRegular';
+  margin: inherit;
+  margin-bottom: 10px;
+  width: 240px;
+  height: 50px;
+  padding: 5px;
+  background-color: black;
+  color: yellow;
+  font: bold 50px sans-serif;
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: 'CodeNewRomanRegular';
 }
 .subtract{
-	background-color: red;
-	font-size: 45px;
-	font-weight: 900;
+  background-color: red;
+  font-size: 45px;
+  font-weight: 900;
 }
 .add{
-	background-color: blue;
-	
+  background-color: blue;
+  
 }
 #pauseButton{
-	padding-right: 10px;
-	background-color: green;
-	font-size: 55px;
-	width: 90px;
-	height: 90px;
-	grid-column-start: 4;
-	grid-row-start: 1;
-	grid-row-end: span 2;
+  padding-right: 10px;
+  background-color: green;
+  font-size: 55px;
+  width: 90px;
+  height: 90px;
+  grid-column-start: 4;
+  grid-row-start: 1;
+  grid-row-end: span 2;
 }
 button{
-/* 	border-style: none; */
-	color: white;
-	font: bold 50px Lucida Console, sans-serif;
-	width: 60px;
-	height: 60px;
-	display:block;
-   	background-color: #ccff99;
-	text-align: center;
-   	border-radius: 50%;
-	margin: 5px;
+/*   border-style: none; */
+  color: white;
+  font: bold 50px Lucida Console, sans-serif;
+  width: 60px;
+  height: 60px;
+  display:block;
+  background-color: #ccff99;
+  text-align: center;
+  border-radius: 50%;
+  margin: 5px;
 }
 button:active{
-	border-style: inset;
+  border-style: inset;
 }
 button:focus{
-	outline-style: none;
+  outline-style: none;
 }
 p{
-	text-align: center;
-	margin-top: 180px;
-	margin-bottom: 20px;
-	font: 35px Lucida Console, sans-serif;
+  text-align: center;
+  margin-top: 150px;
+  /* margin-bottom: 20px; */
+  font: 35px Lucida Console, sans-serif;
 }
 .workOrBreak{
-	color: black;
-	font: bold 13px Lucida Console, sans-serif;
-	width: 180px;
-	height: 40px;
-	display:block;
-   	background-color: #CCCCCC;
-   	border-radius: 10px;
-	margin: 5px;
-	font-size: 18px;
+  color: black;
+  font: bold 13px Lucida Console, sans-serif;
+  width: 180px;
+  height: 40px;
+  display:block;
+     background-color: #CCCCCC;
+     border-radius: 10px;
+  margin: 5px;
+  font-size: 18px;
 }
 
 /* Set default border as inset since the initial state is work, so this button is selected */
 #workButton{
-	border-style: inset;
-	grid-column-start: 1;
-	grid-row-start: 1;
+  border-style: inset;
+  grid-column-start: 1;
+  grid-row-start: 1;
 }
 
 /* Set default border as none since the initial state is not break, so this button is not selected */
 #breakButton{
-	border-style: none;
-	grid-column-start: 1;
-	grid-row-start: 2;
+  border-style: none;
+  grid-column-start: 1;
+  grid-row-start: 2;
 }
 
 i{
-	pointer-events:none;
+  pointer-events:none;
 }
 
 #buttons{
-	display: grid;
-	grid-template-columns: auto auto;
-	grid-template-columns: auto auto auto auto;
-	justify-items: center;
-	align-items: center;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto auto;
+  justify-items: center;
+  align-items: center;
 }
 
 #minus1{
-	grid-column-start: 2;
-	grid-row-start: 1;
+  grid-column-start: 2;
+  grid-row-start: 1;
 }
 #minus2{
-	grid-column-start: 2;
-	grid-row-start: 2;
+  grid-column-start: 2;
+  grid-row-start: 2;
 }
 #plus1{
-	grid-column-start: 3;
-	grid-row-start: 1;
+  grid-column-start: 3;
+  grid-row-start: 1;
 }
 #plus2{
-	grid-column-start: 3;
-	grid-row-start: 2;
+  grid-column-start: 3;
+  grid-row-start: 2;
 }
