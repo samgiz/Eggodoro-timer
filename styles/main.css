@@ -5,7 +5,9 @@ https://css-tricks.com/examples/ShapesOfCSS/
 	margin: auto;
 }
 #egg {
-   	display:block;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
    	width: 430px;
    	height: 600px;
    	background-color: #ccff99;
@@ -44,8 +46,11 @@ body{
 	padding-right: 10px;
 	background-color: green;
 	font-size: 55px;
-	width: 80px;
-	height: 80px;
+	width: 90px;
+	height: 90px;
+	grid-column-start: 4;
+	grid-row-start: 1;
+	grid-row-end: span 2;
 }
 button{
 /* 	border-style: none; */
@@ -74,7 +79,7 @@ p{
 .workOrBreak{
 	color: black;
 	font: bold 13px Lucida Console, sans-serif;
-	width: 135px;
+	width: 180px;
 	height: 40px;
 	display:block;
    	background-color: #CCCCCC;
@@ -82,16 +87,46 @@ p{
 	margin: 5px;
 	font-size: 18px;
 }
+
+/* Set default border as inset since the initial state is work, so this button is selected */
 #workButton{
 	border-style: inset;
+	grid-column-start: 1;
+	grid-row-start: 1;
 }
+
+/* Set default border as none since the initial state is not break, so this button is not selected */
 #breakButton{
 	border-style: none;
+	grid-column-start: 1;
+	grid-row-start: 2;
 }
+
 i{
 	pointer-events:none;
 }
-#title{
-	text-align: right;
-	margin-right: 80px;
+
+#buttons{
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-columns: auto auto auto auto;
+	justify-items: center;
+	align-items: center;
+}
+
+#minus1{
+	grid-column-start: 2;
+	grid-row-start: 1;
+}
+#minus2{
+	grid-column-start: 2;
+	grid-row-start: 2;
+}
+#plus1{
+	grid-column-start: 3;
+	grid-row-start: 1;
+}
+#plus2{
+	grid-column-start: 3;
+	grid-row-start: 2;
 }

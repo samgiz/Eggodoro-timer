@@ -9,26 +9,24 @@
 </head>
 <body>
 	<div id="egg">
-		<table>
-			<tr>
-				<td colspan="4"><p id="title">Work time left:</p></td>
-			</tr>
-			<tr>
-				<td colspan="4"><div id="display">
-					25:00:00
-				</div></td>
-			</tr>
-			<tr>
-				<td><button class="workOrBreak" id="workButton" onmousedown="changeMode(this)">Work: 25 min</button></td>
-				<td><button class="subtract" onmousedown="changeTime('1')" onmouseup="lastPress++">‒</button></td>
-				<td><button class="add" onmousedown="changeTime('2')" onmouseup="lastPress++">+</button></td>
-				<td rowspan="2"><button id="pauseButton" onmousedown="changeState()">&nbsp<i class="fa fa-play"></i></button></td>
-			</tr>
-			<tr>
-				<td><button class="workOrBreak" id="breakButton" onmousedown="changeMode(this)">Rest: 5 min</button></td>
-				<td><button class="subtract" onmousedown="changeTime('3')" onmouseup="lastPress++">‒</button></td>
-				<td><button class="add" onmousedown="changeTime('4')" onmouseup="lastPress++">+</button></td>
-			</tr>
-		</table>
+		<div>
+			<p id="title">Work time left:</p>
+		</div>
+		<div id="display">
+			25:00:00
+		</div>
+		<!-- Should make this into a grid -->
+		<div id="buttons">
+			<!-- First row -->
+			<button class="workOrBreak" id="workButton" onmousedown="changeMode(this)">Work: 25 min</button>
+			<button class="subtract" id="minus1" onmousedown="changeTime('1')" onmouseup="lastPress++">‒</button>
+			<button class="add" id="plus1" onmousedown="changeTime('2')" onmouseup="lastPress++">+</button>
+			<!-- Both rows -->
+			<button id="pauseButton" onmousedown="changeState()">&nbsp<i class="fa fa-play"></i></button>
+			<!-- Second row -->
+			<button class="workOrBreak" id="breakButton" onmousedown="changeMode(this)">Rest: 5 min</button>
+			<button class="subtract" id="minus2" onmousedown="changeTime('3')" onmouseup="lastPress++">‒</button>
+			<button class="add" id="plus2" onmousedown="changeTime('4')" onmouseup="lastPress++">+</button>
+		</div>
 	</div>
 </body>
