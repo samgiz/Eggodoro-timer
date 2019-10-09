@@ -5,10 +5,10 @@ https://css-tricks.com/examples/ShapesOfCSS/
   margin: 0 auto 0 auto;
   display: flex;
   flex-direction: column;
-  width: 430px;
-  height: 600px;
+  width: 490px;
+  height: 630px;
   background-color: #ccff99;
-  -webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
+  -webkit-border-radius: 70px 70px 70px 70px / 120px 120px 80px 80px;
   border-radius:         50%  50%  50%  50%  / 60%   60%   40%  40%;
 }
 
@@ -20,7 +20,7 @@ body{
 
 #display{
   margin: inherit;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   width: 240px;
   height: 50px;
   padding: 5px;
@@ -28,7 +28,6 @@ body{
   color: yellow;
   font: bold 50px sans-serif;
   text-align: center;
-  margin-bottom: 10px;
   font-family: 'CodeNewRomanRegular';
 }
 .subtract{
