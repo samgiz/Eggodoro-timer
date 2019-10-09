@@ -1,32 +1,39 @@
 <head>
-	<title>Super duper fancy egg timer!</title>
-	<audio id="breakEndAudio" src="http://soundbible.com/mp3/Temple%20Bell%20Huge-SoundBible.com-695883450.mp3" preload="auto" onended="audioPlaying=false;changeMode();"></audio>
-	<audio id="workEndAudio" src="http://soundbible.com/grab.php?id=1474&type=mp3" preload="auto" onended="audioPlaying=false;changeMode();"></audio>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/code-new-roman" type="text/css"/>
-	<link rel = "stylesheet" type = "text/css" href = "styles/main.css" />
-	<script type="text/javascript" src="scripts/main.js"></script>
+  <title>Super duper fancy egg timer!</title>
+  <!-- Get timer sound audios -->
+  <audio id="breakEndAudio" src="http://soundbible.com/mp3/Temple%20Bell%20Huge-SoundBible.com-695883450.mp3" preload="auto" onended="audioPlaying=false;changeMode();"></audio>
+  <audio id="workEndAudio" src="http://soundbible.com/grab.php?id=1474&type=mp3" preload="auto" onended="audioPlaying=false;changeMode();"></audio>
+  <!-- Get button icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Get display font -->
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/code-new-roman" type="text/css"/>
+  <!-- Add stylesheet -->
+  <link rel = "stylesheet" type = "text/css" href = "styles/main.css" />
+  <!-- Add functionality -->
+  <script type="text/javascript" src="scripts/main.js"></script>
 </head>
 <body>
-	<div id="egg">
-		<div>
-			<p id="title">Work time left:</p>
-		</div>
-		<div id="display">
-			25:00:00
-		</div>
-		<!-- Should make this into a grid -->
-		<div id="buttons">
-			<!-- First row -->
-			<button class="workOrBreak" id="workButton" onmousedown="changeMode(this)">Work: 25 min</button>
-			<button class="subtract" id="minus1" onmousedown="changeTime('1')" onmouseup="lastPress++">‒</button>
-			<button class="add" id="plus1" onmousedown="changeTime('2')" onmouseup="lastPress++">+</button>
-			<!-- Both rows -->
-			<button id="pauseButton" onmousedown="changeState()">&nbsp<i class="fa fa-play"></i></button>
-			<!-- Second row -->
-			<button class="workOrBreak" id="breakButton" onmousedown="changeMode(this)">Rest: 5 min</button>
-			<button class="subtract" id="minus2" onmousedown="changeTime('3')" onmouseup="lastPress++">‒</button>
-			<button class="add" id="plus2" onmousedown="changeTime('4')" onmouseup="lastPress++">+</button>
-		</div>
+  <div id="egg">
+	<!-- Container for the title -->
+    <div>
+      <p id="title">Work time left:</p>
 	</div>
+	<!-- Display for remaining time -->
+    <div id="display">
+      25:00:00
+    </div>
+    <!-- A grid of buttons -->
+    <div id="buttons">
+      <!-- First row -->
+      <button class="workOrBreak" id="workButton" onmousedown="changeMode(this)">Work: 25 min</button>
+      <button class="subtract" id="minus1" onmousedown="changeTime('1')" onmouseup="lastPress++">‒</button>
+      <button class="add" id="plus1" onmousedown="changeTime('2')" onmouseup="lastPress++">+</button>
+      <!-- Both rows -->
+      <button id="pauseButton" onmousedown="changeState()">&nbsp<i class="fa fa-play"></i></button>
+      <!-- Second row -->
+      <button class="workOrBreak" id="breakButton" onmousedown="changeMode(this)">Rest: 5 min</button>
+      <button class="subtract" id="minus2" onmousedown="changeTime('3')" onmouseup="lastPress++">‒</button>
+      <button class="add" id="plus2" onmousedown="changeTime('4')" onmouseup="lastPress++">+</button>
+    </div>
+  </div>
 </body>
