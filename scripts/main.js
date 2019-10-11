@@ -44,6 +44,7 @@ function minutesToMiliseconds(a){
 
 // Changes time of work/rest
 // If the button is held down for a second, it starts rapidly increasing/decreasing the time.
+// This variable is updated from index.html
 var lastPress = 0;
 function changeTime(b){
   changeTimeOnce(b);

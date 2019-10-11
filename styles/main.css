@@ -17,7 +17,6 @@ body{
   background-color : #3399ff;
 }
 
-
 #display{
   margin: inherit;
   margin-bottom: 20px;
@@ -30,49 +29,13 @@ body{
   text-align: center;
   font-family: 'CodeNewRomanRegular';
 }
-.subtract{
-  background-color: red;
-  font-size: 45px;
-  font-weight: 900;
-}
-.add{
-  background-color: blue;
-  
-}
-#pauseButton{
-  padding-right: 10px;
-  background-color: green;
-  font-size: 55px;
-  width: 90px;
-  height: 90px;
-  grid-column-start: 4;
-  grid-row-start: 1;
-  grid-row-end: span 2;
-}
-button{
-/*   border-style: none; */
-  color: white;
-  font: bold 50px Lucida Console, sans-serif;
-  width: 60px;
-  height: 60px;
-  display:block;
-  background-color: #ccff99;
-  text-align: center;
-  border-radius: 50%;
-  margin: 5px;
-}
-button:active{
-  border-style: inset;
-}
-button:focus{
-  outline-style: none;
-}
-p{
+
+#title{
   text-align: center;
   margin-top: 150px;
-  /* margin-bottom: 20px; */
   font: 35px Lucida Console, sans-serif;
 }
+
 .workOrBreak{
   color: black;
   font: bold 13px Lucida Console, sans-serif;
@@ -83,6 +46,59 @@ p{
      border-radius: 10px;
   margin: 5px;
   font-size: 18px;
+}
+
+i{
+  pointer-events:none;
+}
+
+/* Default button logic */
+button{
+  color: white;
+  font: bold 50px Lucida Console, sans-serif;
+  width: 60px;
+  height: 60px;
+  display:block;
+  background-color: #ccff99;
+  text-align: center;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+/* Set button visuals when pressing */
+button:active{
+  border-style: inset;
+}
+
+button:focus{
+  outline-style: none;
+}
+
+/* Set up simple grid layout for buttons */
+#buttons{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto auto;
+  justify-items: center;
+  align-items: center;
+}
+
+/* Assign positions for all buttons */
+#minus1{
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+#minus2{
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+#plus1{
+  grid-column-start: 3;
+  grid-row-start: 1;
+}
+#plus2{
+  grid-column-start: 3;
+  grid-row-start: 2;
 }
 
 /* Set default border as inset since the initial state is work, so this button is selected */
@@ -99,31 +115,24 @@ p{
   grid-row-start: 2;
 }
 
-i{
-  pointer-events:none;
+/* Set up large start/stop button */
+#pauseButton{
+  padding-right: 10px;
+  background-color: green;
+  font-size: 55px;
+  width: 90px;
+  height: 90px;
+  grid-column-start: 4;
+  grid-row-start: 1;
+  grid-row-end: span 2;
 }
 
-#buttons{
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-columns: auto auto auto auto;
-  justify-items: center;
-  align-items: center;
+.subtract{
+  background-color: red;
+  font-size: 45px;
+  font-weight: 900;
 }
 
-#minus1{
-  grid-column-start: 2;
-  grid-row-start: 1;
-}
-#minus2{
-  grid-column-start: 2;
-  grid-row-start: 2;
-}
-#plus1{
-  grid-column-start: 3;
-  grid-row-start: 1;
-}
-#plus2{
-  grid-column-start: 3;
-  grid-row-start: 2;
+.add{
+  background-color: blue;
 }
