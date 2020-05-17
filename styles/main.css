@@ -12,12 +12,12 @@ https://css-tricks.com/examples/ShapesOfCSS/
   border-radius:         50%  50%  50%  50%  / 60%   60%   40%  40%;
 }
 
-body{
+body {
   padding: 50px;
   background-color : #3399ff;
 }
 
-#display{
+#display {
   margin: inherit;
   margin-bottom: 20px;
   width: 240px;
@@ -30,13 +30,13 @@ body{
   font-family: 'CodeNewRomanRegular';
 }
 
-#title{
+#title {
   text-align: center;
   margin-top: 150px;
   font: 35px Lucida Console, sans-serif;
 }
 
-.workOrBreak{
+.workOrBreak {
   color: black;
   font: bold 13px Lucida Console, sans-serif;
   width: 180px;
@@ -48,12 +48,12 @@ body{
   font-size: 18px;
 }
 
-i{
+i {
   pointer-events:none;
 }
 
 /* Default button logic */
-button{
+button {
   color: white;
   font: bold 50px Lucida Console, sans-serif;
   width: 60px;
@@ -66,16 +66,16 @@ button{
 }
 
 /* Set button visuals when pressing */
-button:active{
+button:active {
   border-style: inset;
 }
 
-button:focus{
+button:focus {
   outline-style: none;
 }
 
 /* Set up simple grid layout for buttons */
-#buttons{
+#buttons {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-columns: auto auto auto auto;
@@ -84,39 +84,39 @@ button:focus{
 }
 
 /* Assign positions for all buttons */
-#minus1{
+#minus1 {
   grid-column-start: 2;
   grid-row-start: 1;
 }
-#minus2{
+#minus2 {
   grid-column-start: 2;
   grid-row-start: 2;
 }
-#plus1{
+#plus1 {
   grid-column-start: 3;
   grid-row-start: 1;
 }
-#plus2{
+#plus2 {
   grid-column-start: 3;
   grid-row-start: 2;
 }
 
 /* Set default border as inset since the initial state is work, so this button is selected */
-#workButton{
+#workButton {
   border-style: inset;
   grid-column-start: 1;
   grid-row-start: 1;
 }
 
 /* Set default border as none since the initial state is not break, so this button is not selected */
-#breakButton{
+#breakButton {
   border-style: none;
   grid-column-start: 1;
   grid-row-start: 2;
 }
 
 /* Set up large start/stop button */
-#pauseButton{
+#pauseButton {
   padding-right: 10px;
   background-color: green;
   font-size: 55px;
@@ -127,12 +127,12 @@ button:focus{
   grid-row-end: span 2;
 }
 
-.subtract{
+.subtract {
   background-color: red;
   font-size: 45px;
   font-weight: 900;
 }
 
-.add{
+.add {
   background-color: blue;
 }
